@@ -1,0 +1,17 @@
+{
+  "name": "vectorizee-clone",
+  "version": "1.0.0",
+  "description": "Simple image-to-SVG vectorizer demo (Express + potrace + sharp)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "potrace": "^1.4.0",
+    "sharp": "^0.32.1",
+    "rate-limit-express": "^1.1.0"
+  }
+}
