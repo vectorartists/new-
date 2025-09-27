@@ -25,7 +25,11 @@ form.addEventListener('submit', async (e) => {
   fd.append('image', file);
 
   try {
-    const resp = await fetch('/api/vectorize', { method: 'POST', body: fd });
+    const resp = await fetch('https://vectorizee.onrender.com/api/vectorize', {
+  method: 'POST',
+  body: fd
+});
+
     if (!resp.ok) throw new Error('Server returned ' + resp.status);
     const data = await resp.json();
 
